@@ -1,8 +1,7 @@
 FROM %%BASE_IMAGE%%
 
+# Add env
 ENV LANG C.UTF-8
-
-USER 0:0
 
 RUN apk add --no-cache jq nodejs nodejs-npm
 
