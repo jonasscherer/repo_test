@@ -1,7 +1,8 @@
-FROM %%BASE_IMAGE%%
+FROM python:3.6
 
-# Add env
 ENV LANG C.UTF-8
+
+USER 0:0
 
 RUN apk add --no-cache jq nodejs nodejs-npm
 
